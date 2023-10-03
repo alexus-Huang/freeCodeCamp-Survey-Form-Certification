@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">This survey is about something</p>
-    <form id="survey-form">
-        <div id="actualSurvey">
-            <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required ></label>
-            <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required pattern="[A-Za-z],[@],[11,]"></label>
-            <label for="number" id="number-label">Age (optional): <input type="number" id="number" min="5" max="120" placeholder="Age (optional)" pattern="[0-9]{3}"></label>
-            <label for="dropdown">What is your current status?
-                <select name="options" id="dropdown" required>
-                    <option value="selectOption"> Select</option>
-                    <option value="student">Student</option>
-                    <option value="employed">Employed</option>
-                    <option value="unemployed">Unemployed</option>
-                </select>
-            </label>
-        </div>
-        <div id="randomQuestions">
-            <p>How are you feeling today?</p>
-            <label for="good">Good: <input type="radio" name="mood" id="good" value="good" checked></label>
-            <label for="decent">Decent: <input type="radio" name="mood" id="decent" value="decent"></label>
-            <h2>How did you find us?</h2>
-            <label for="youtube">Youtube <input type="checkbox" name="finding" id="youtube" value="youtube"></label>
-            <label for="link">Link: <input type="checkbox" name="finding" id="link" value="link"></label>
-            <label for="friend">Friend: <input type="checkbox" name="finding" id="friend" value="friend"></label>
-        </div>
-        <label for="comments"><textarea name="comments" id="comments" cols="30" rows="10"></textarea></label>
-        <button type="submit" id="submit">Submit</button>
-    </form>
+    <div id="surveyContainer">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This survey is about an interesting topic!</p>
+        <form id="survey-form">
+            <div id="actualSurvey">
+                <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required ></label>
+                <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required pattern="[A-Za-z],[@],[11,]"></label>
+                <label for="number" id="number-label">Age (optional): <input type="number" id="number" min="5" max="120" placeholder="Age" pattern="[0-9]{3}"></label>
+                <label for="dropdown">What is your current status?
+                    <select name="options" id="dropdown" required>
+                        <option value="selectOption"> Select</option>
+                        <option value="student">Student</option>
+                        <option value="employed">Employed</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                </label>
+            </div>
+            <div id="randomQuestions">
+                <p>How are you feeling today?</p>
+                <label for="good">Good: <input type="radio" name="mood" id="good" value="good" checked></label>
+                <label for="decent">Decent: <input type="radio" name="mood" id="decent" value="decent"></label>
+                <h2>How did you find us?</h2>
+                <label for="youtube">Youtube <input type="checkbox" name="finding" id="youtube" value="youtube"></label>
+                <label for="link">Link: <input type="checkbox" name="finding" id="link" value="link"></label>
+                <label for="friend">Friend: <input type="checkbox" name="finding" id="friend" value="friend"></label>
+                <label for="comments"><textarea name="comments" id="comments" cols="30" rows="10"></textarea></label>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+            
+        </form>
+    </div>
     
 </body>
 </html>
