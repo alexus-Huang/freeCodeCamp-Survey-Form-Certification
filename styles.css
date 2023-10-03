@@ -1,0 +1,67 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 100%;
+    font-size:115%;
+}
+#surveyContainer{
+    background-color: antiquewhite;
+    width: 75%;
+    height:90%;
+    padding:10px;
+    border-radius: 7%;
+    margin: 0 auto;
+}
+/* Inside the Container */
+#survey-form{
+    border: 1px solid black;
+    border-radius: 10%;
+}
+#title{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+#description{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+#survey-form{
+    width:50%;
+    height:100%;
+    margin: 0 auto;
+    padding:10px;
+}
+/* #actualSurvey items */
+#actualSurvey label{
+    display: block;
+    padding:20px;
+    margin: auto;
+    width:50%;
+    height:100%;
+}
+#dropdown{
+    width:50%;
+    text-align: center;
+    margin: 0 auto;
+}
+/* #randomQuestions */
+#randomQuestions{
+    width:50%;
+    margin: 0 auto;
+    text-align: center;
+}
+#submit{
+    display: block;
+    width:30%;
+    margin: 0 auto;
+    background-color: rgb(111, 253, 111);
+    border: none;
+    border-radius: 10%;
+}
+#submit:hover{
+    background-color: rgb(90, 244, 90);
+}
